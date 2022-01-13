@@ -13,7 +13,7 @@
 <div class="w-5/6 h-auto bg-blue-50 mx-auto mb-12 rounded-lg shadow-2xl p-8">
     <h2 class="text-center text-xl text-gray-700 font-bold mb-8">Complete The Form</h2>
 
-    <form  method="get" id="project-form">
+    <form method="post" id="project-form">
         <div class="flex justify-between flex-wrap">
             <div class="flex flex-col w-1/2">
                 <div class="mb-4 mr-4">
@@ -34,12 +34,12 @@
                 </div>
 
                 <div>
-                    <label for="services"></label>
+                    <label for="services">
                     <select name="services" id="services"  class="p-1 w-full rounded-sm border-2 border-blue-900 text-gray-400">
                         <option value="sales">Services</option>
-                        <option value="services">Sales</option>
                         <option value="accounting">Accounting</option>
                     </select>
+                    </label>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
         </label>
 
 
-        <div id="results"></div>
+
     </form>
 </div>
 <script src="app.js"></script>

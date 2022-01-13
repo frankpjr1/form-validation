@@ -28,8 +28,6 @@
           prompt("enter your email")
         }
 
-
-
         if (clientMessages.value === "" || clientMessages.value === null){
           prompt("please write us a short note")
         }
