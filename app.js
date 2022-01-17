@@ -59,13 +59,9 @@
 
         }
 
-        if (clientServices === "checked" ){
-         console.log("hello")
 
 
-        }
 
-        console.log(clientServices)
 
 
 
