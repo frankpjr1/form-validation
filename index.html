@@ -13,52 +13,67 @@
 <div class="w-5/6 h-auto bg-blue-50 mx-auto mb-12 rounded-lg shadow-2xl p-8">
     <h2 class="text-center text-xl text-gray-700 font-bold mb-8">Complete The Form</h2>
 
-    <form method="post" id="project-form">
+    <!--Form-->
+    <form id="project-form" name="project-form" onsubmit="return">
         <div class="flex justify-between flex-wrap">
             <div class="flex flex-col w-1/2">
                 <div class="mb-4 mr-4">
-                    <label for="name"></label>
-                    <input type="text" id="name" value="" placeholder="Your Name"  class="p-1 w-full rounded-sm border-2 border-blue-900">
+                    <label for="name">
+                    <input type="text" id="name" name="name" placeholder="Your Name"  class="p-1 w-full rounded-sm border-2 border-blue-900">
+                    </label>
+                    <div id="error-name"></div>
                 </div>
-
+<!--email-->
                 <div class="mb-4 mr-4">
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="example@gmail.com"  class="p-1 w-full rounded-sm border-2 border-blue-900">
+                    <label for="email">
+                    <input type="email" id="email" placeholder="example@gmail.com" name="email" class="p-1 w-full rounded-sm border-2 border-blue-900">
+                    </label>
+                    <div id="error-email"></div>
                 </div>
             </div>
-
+<!--phone-->
             <div class="flex flex-col w-1/2">
                 <div class="mb-4">
-                    <label for="phone"></label>
-                    <input type="tel" id="phone" placeholder="Enter:phone number"  class="p-1 w-full rounded-sm border-2 border-blue-900">
-                </div>
-
-                <div>
-                    <label for="services">
-                    <select name="services" id="services"  class="p-1 w-full rounded-sm border-2 border-blue-900 text-gray-400">
-                        <option value="sales">Services</option>
-                        <option value="accounting">Accounting</option>
-                    </select>
+                    <label for="phone">
+                    <input type="tel" id="phone" placeholder="Enter:phone number" name="phone" class="p-1 w-full rounded-sm border-2 border-blue-900">
                     </label>
-                </div>
+                <div id="error-phone"></div>
+            </div>
+<!--services-->
+            <div>
+                <label for="select_default" >
+                    <select id="select_default"  class="p-1 w-full rounded-sm border-2 border-blue-900 text-gray-400">
+                        <option  value="home">select a service</option>
+                        <option>Sales</option>
+                        <option>Accounting</option>
+                    </select>
+                </label>
+                <div id="error-services"></div>
+            </div>
             </div>
         </div>
+<!--client message-->
         <div class="mt-8 mb-4">
-            <label for="client_message"></label>
-            <input id="client_message" placeholder="Test Message"  class="textarea w-full h-24 textarea-bordered pl-4 pt-4 mb-2 rounded-sm border-2 border-blue-400">
+                <label for="client_message">
+                <input id="client_message" placeholder="Test Message"  class="textarea w-full h-24 textarea-bordered pl-4 pt-4 mb-2 rounded-sm border-2 border-blue-400">
+                </label>
+            <div id="note"></div>
         </div>
-
+<!--terms and conditions-->
         <div class="flex items-center mb-4">
             <div>
                 <label for="terms-conditions">
-                <input type="checkbox" id="terms-conditions" name="terms-conditions" value="terms-conditions"  class="mr-2 form-check-input appearance-none h-4 w-4 border border-blue-300 rounded-sm bg-blue-200 checked:bg-blue-600 checked:border-transparent ">
+                <input type="checkbox" id="terms-conditions" name="terms-conditions" value="terms-conditions"  class="mr-2 form-check-input">
                 </label>
+
             </div>
             <p class="font-medium">I accept <span class="font-semibold text-blue-400"><a href="#">Terms &amp Conditions</a></span></p>
-        </div>
 
+        </div>
+        <div id="error-terms"></div>
+<!--submit-->
         <label for="submit">
-            <input type="submit" id="submit" class="px-4 py-2 mt-8 bg-blue-600 rounded-lg text-blue-50 font-bold hover:bg-blue-200 hover:text-blue-800">
+            <input type="submit" id="submit" value="submit" class="px-4 py-2 mt-8 bg-blue-600 rounded-lg text-blue-50 font-bold hover:bg-blue-200 hover:text-blue-800">
         </label>
 
 
