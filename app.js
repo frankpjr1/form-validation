@@ -23,28 +23,28 @@
 
         if (clientName.value === "" || clientName.value === null ){
             const  errorMessage = document.createElement('div')
-            errorMessage.innerHTML= "your name is required";
+            errorMessage.innerHTML= `<p style="background-color: #66c2ff;width:100%;padding: .1em 0 .5em 1.5em;margin-top: .1em;font-size:1.5em;color: cornsilk;">name is required</p>`;
             errorName.appendChild(errorMessage);
 
         }
 
         if (clientEmail.value === "" || clientEmail.value === null){
           const  errorMessage = document.createElement('div')
-          errorMessage.innerHTML= "a valid email must be entered";
+          errorMessage.innerHTML= `<p style="background-color: #66c2ff;width:100%;padding: .1em 0 .5em 1.5em;margin-top: .1em;font-size:1.5em;color: cornsilk;">valid email is required</p>`;
           errorEmail.appendChild(errorMessage);
 
         }
 
         if (clientPhone.value === "" || clientPhone.value === null){
           const  errorMessage = document.createElement('div')
-          errorMessage.innerHTML= "a phone number must be entered";
+          errorMessage.innerHTML= `<p style="background-color: #66c2ff;width:100%;padding: .1em 0 .5em 1.5em;font-size:1.5em;margin-top: .1em;color: cornsilk;">phone number required</p>`;
           errorPhone.appendChild(errorMessage);
 
         }
 
       if (clientServices.value === "home" || clientServices.value === null){
           const  errorMessage = document.createElement('div')
-          errorMessage.innerHTML= "service selection is required";
+          errorMessage.innerHTML= `<p style="background-color: #66c2ff;width:100%;padding: .1em 0 .5em 1.5em;font-size:1.5em;margin-top: .1em;color: cornsilk;">service selection required</p>`;
           errorService.appendChild(errorMessage);
 
       }
@@ -53,14 +53,14 @@
 
         if (clientMessages.value === "" || clientMessages.value === null){
           const  errorMessage = document.createElement('div')
-          errorMessage.innerHTML= "a short note is required";
+          errorMessage.innerHTML= `<p style="background-color: #66c2ff;width:50%;padding: .5em 0 .5em 1.5em;font-size:1.5em;color: cornsilk;">a short note is required</p>'`;
           errorNote.appendChild(errorMessage);
 
         }
 
         if (clientTerms.checked === false){
           const  errorMessage = document.createElement('div')
-          errorMessage.innerHTML= "terms must be selected";
+          errorMessage.innerHTML= '<p style="background-color: #66c2ff;width:50%;padding: .5em 0 .5em 1.5em;font-size:1.5em;color: cornsilk;">terms must be selected</p>';
           errorSelect.appendChild(errorMessage);
 
         }
