@@ -4,11 +4,10 @@
   const clientName = document.getElementById('name');
   const clientPhone = document.getElementById('phone');
   const clientEmail = document.getElementById('email');
-  const clientServices = document.getElementById('select_default').value;
-
-
+  const clientServices = document.getElementById('select_default');
   const clientMessages = document.getElementById('client_message');
-  const clientTerms = document.getElementById('terms-conditions');
+  const clientTerms = document.getElementById("myCheck");
+
   const errorName = document.getElementById('error-name');
   const errorEmail = document.getElementById('error-email');
   const errorPhone = document.getElementById('error-phone');
@@ -42,6 +41,13 @@
           errorPhone.appendChild(errorMessage);
 
         }
+
+      if (clientServices.value === "home" || clientServices.value === null){
+          const  errorMessage = document.createElement('div')
+          errorMessage.innerHTML= "service selection is required";
+          errorService.appendChild(errorMessage);
+
+      }
 
 
 
